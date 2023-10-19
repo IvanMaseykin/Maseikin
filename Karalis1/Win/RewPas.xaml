@@ -1,0 +1,85 @@
+﻿<Window x:Class="Karalis1.Win.RewPas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Karalis1.Win"
+        mc:Ignorable="d"
+        Title="Смена пароля" Height="700" Width="600">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="1" Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Text="Смена пароля"
+            FontWeight="Bold"
+            FontSize="36"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+        
+        <TextBlock Grid.Row="2" Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Text="Старый пароль "
+            FontWeight="Bold"
+            FontSize="18"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="1"
+            Text="Новый пароль"
+            FontWeight="Bold"
+            FontSize="18"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="1"
+            Text="Подтвердите пароль"
+            FontWeight="Bold"
+            FontSize="18"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"/>
+
+        <PasswordBox Grid.Row="2" Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Margin="20 0 20 0"
+            Height="40"
+            FontSize="20"/>
+
+        <PasswordBox Grid.Row="3" Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Margin="20 0 20 0"
+            Height="40"
+            FontSize="20"/>
+
+        <PasswordBox Grid.Row="4" Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Margin="20 0 20 0"
+            Height="40"
+            FontSize="20"/>
+
+        <Button x:Name="BRegEnd"
+            Grid.Row="5" Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Content="Сменить пароль"
+            Margin="100 0 100 0"
+            Height="40"
+            FontSize="20"
+            Background="DarkSeaGreen" Click="BRegEnd_Click"/>
+    </Grid>
+</Window>

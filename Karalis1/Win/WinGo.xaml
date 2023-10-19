@@ -1,0 +1,74 @@
+﻿<Window x:Class="Karalis1.Win.WinGo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Karalis1.Win"
+        mc:Ignorable="d"
+        Title="Личный кабинет" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="1"
+            Text="Личный кабинет"
+            FontWeight="Bold"
+            FontSize="25"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"/>
+        
+        <TextBlock Grid.Row="2" Grid.Column="1"
+            Text="Ваша почта:"
+            FontWeight="DemiBold"
+            FontSize="12"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"/>
+        
+        <TextBlock Grid.Row="2" Grid.Column="1"
+            Text="Имя:"
+            FontWeight="DemiBold"
+            FontSize="12"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"/>
+        
+        <TextBlock Grid.Row="2" Grid.Column="1"
+             Text="Фомилия:"
+             FontSize="12"
+             VerticalAlignment="Bottom"
+             HorizontalAlignment="Left"/>
+        
+        <Button Grid.Row="7" Grid.Column="3"
+             x:Name="BOut"
+             Content="Выйти"
+             Margin="150,30,5, 0"
+             Height="20"
+             Background="PaleVioletRed"
+             FontSize="13" Click="BOut_Click"/>
+        
+        <Button Grid.Row="7" Grid.Column="1"
+              x:Name="BResPas"
+              Content="Сменить пароль"
+              Margin="10,30,140, 0"
+              Height="20"
+              Background="DarkSeaGreen"
+              FontSize="13" Click="BResPas_Click"/>
+    </Grid>
+</Window>
