@@ -34,5 +34,12 @@ namespace Karalis1.Win
             rewPas.Show();
             this.Close();
         }
+
+        private void Main_Click(object sender, RoutedEventArgs e)
+        {
+            GenMenu menu = new GenMenu();
+            menu.Show();
+            Close();
+        }
     }
 }

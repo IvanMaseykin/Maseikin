@@ -50,7 +50,7 @@
             HorizontalAlignment="Left"/>
         
         <TextBlock Grid.Row="2" Grid.Column="1"
-             Text="Фомилия:"
+             Text="Фамилия:"
              FontSize="12"
              VerticalAlignment="Bottom"
              HorizontalAlignment="Left"/>
@@ -59,6 +59,7 @@
              x:Name="BOut"
              Content="Выйти"
              Margin="150,30,5, 0"
+             VerticalAlignment="Bottom"
              Height="20"
              Background="PaleVioletRed"
              FontSize="13" Click="BOut_Click"/>
@@ -67,8 +68,17 @@
               x:Name="BResPas"
               Content="Сменить пароль"
               Margin="10,30,140, 0"
+              VerticalAlignment="Bottom"
               Height="20"
               Background="DarkSeaGreen"
               FontSize="13" Click="BResPas_Click"/>
+        <Button x:Name="Main"
+                Content="Главное меню"
+                Grid.Row="7" Grid.Column="2"
+                Height="20" 
+                Margin="40 0"
+                Background="WhiteSmoke"
+                VerticalAlignment="Bottom"
+                FontSize="13" Click="Main_Click"/>
     </Grid>
 </Window>

@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Karalis1.Win"
         mc:Ignorable="d"
-        Title="Смена пароля" Height="700" Width="600">
+        Title="Смена пароля" Height="700" Width="600"
+        WindowStartupLocation="CenterScreen">
 
     <Grid>
         <Grid.ColumnDefinitions>

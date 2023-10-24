@@ -65,6 +65,9 @@
     <Compile Include="Win\WinAvto.xaml.cs">
       <DependentUpon>WinAvto.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Win\GenMenu.xaml.cs">
+      <DependentUpon>GenMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Win\WinGo.xaml.cs">
       <DependentUpon>WinGo.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Win\WinAvto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Win\GenMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
