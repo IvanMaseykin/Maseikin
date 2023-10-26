@@ -23,5 +23,25 @@ namespace Karalis1.Win
         {
             InitializeComponent();
         }
+        private void Private_Click(object sender, RoutedEventArgs e)
+        {
+            WinGo winGo = new WinGo();
+            winGo.Show();
+            Close();
+        }
+
+        private void TeachList_Click(object sender, RoutedEventArgs e)
+        {
+            TeachersList teachersList = new TeachersList();
+            teachersList.Show();
+            this.Close();
+        }
+
+        private void UserList_Click(object sender, RoutedEventArgs e)
+        {
+            UsersList userList = new UsersList();
+            userList.Show();
+            this.Close();
+        }
     }
 }

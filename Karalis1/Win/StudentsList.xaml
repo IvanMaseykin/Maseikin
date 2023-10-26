@@ -5,8 +5,59 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Karalis1.Win"
         mc:Ignorable="d"
-        Title="StudentsList" Height="450" Width="800">
+        Title="StudentsList" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Grid.Column="0" 
+              Grid.RowSpan="2" Grid.ColumnSpan="5">
+            <MenuItem x:Name="MI"
+                    Header="Меню">
+                <MenuItem x:Name="TeachList" Header="Список преподователей"
+                          Opacity="2"
+                          FontSize="12" Click="TeachList_Click"/>
+                <MenuItem x:Name="UserList" Header="Список пользователей"
+                          Opacity="2"
+                          FontSize="12" Click="UserList_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="MIGo"
+                    Header="Личный кабинет" Click="Private_Click"/>
+        </Menu>
+        <TextBlock x:Name="StudList" Text="Список студентов" 
+                   Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3"
+                   HorizontalAlignment="Center" VerticalAlignment="Top"
+                   FontSize="40"
+                   FontWeight="Bold"/>
+        <DataGrid x:Name="DgListSudents" AutoGenerateColumns="False"
+                  Margin="10"
+                  Grid.Row="3" Grid.Column="1"
+                  Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№ п/п"
+                                    Width="*"
+                                    Binding="{Binding IdStudents}"/>
+                <DataGridTextColumn Header="ФИО"
+                                    Width="*"
+                                    Binding="{Binding FIOStudent}"/>
+                <DataGridTextColumn Header="Номер Телефона"
+                                    Width="*"
+                                    Binding="{Binding NumberPhoneStudent}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
     </Grid>
 </Window>
