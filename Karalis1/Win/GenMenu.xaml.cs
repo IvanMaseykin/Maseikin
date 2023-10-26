@@ -30,5 +30,20 @@ namespace Karalis1.Win
             winGo.Show();
             Close();
         }
+
+        private void StudList_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TeachList_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void UserList_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

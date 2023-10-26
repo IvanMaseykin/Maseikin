@@ -25,14 +25,16 @@
             Grid.Column="0" Grid.Row="0"
             Grid.ColumnSpan="4">
             <MenuItem x:Name="MI"
-                    Header="Меню" >
+                    Header="Меню">
                 <MenuItem x:Name="StudList" Header="Список студентов"
                           Opacity="2"
-                          FontSize="12"/>
+                          FontSize="12" Click="StudList_Click"/>
                 <MenuItem x:Name="TeachList" Header="Список преподователей"
-                          />
+                          Opacity="2"
+                          FontSize="12" Click="TeachList_Click"/>
                 <MenuItem x:Name="UserList" Header="Список пользователей"
-                          />
+                          Opacity="2"
+                          FontSize="12" Click="UserList_Click"/>
             </MenuItem>
             <MenuItem x:Name="MIGo"
                     Header="Личный кабинет" Click="Private_Click" />

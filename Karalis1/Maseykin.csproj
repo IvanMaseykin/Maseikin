@@ -62,6 +62,15 @@
     <Compile Include="Win\RewPas.xaml.cs">
       <DependentUpon>RewPas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Win\StudentsList.xaml.cs">
+      <DependentUpon>StudentsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Win\TeachersList.xaml.cs">
+      <DependentUpon>TeachersList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UsersList.xaml.cs">
+      <DependentUpon>UsersList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Win\WinAvto.xaml.cs">
       <DependentUpon>WinAvto.xaml</DependentUpon>
     </Compile>
@@ -103,6 +112,18 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Win\RewPas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Win\StudentsList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Win\TeachersList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Win\UsersList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
