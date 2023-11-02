@@ -62,6 +62,9 @@
     <Compile Include="Win\RewPas.xaml.cs">
       <DependentUpon>RewPas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Win\SudentsList.xaml.cs">
+      <DependentUpon>SudentsList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Win\WinAvto.xaml.cs">
       <DependentUpon>WinAvto.xaml</DependentUpon>
     </Compile>
@@ -103,6 +106,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Win\RewPas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Win\SudentsList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
